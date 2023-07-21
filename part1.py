@@ -8,4 +8,4 @@ def part1(input: str) -> bool:
     card = Card(card_string)
 
     result = card.playBingo(numbers)
-    return bool(result)
+    return type(result) == int
