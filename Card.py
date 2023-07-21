@@ -30,4 +30,4 @@ class Card:
             for column in columns:
                 if not column:
                     return call_count
-        return None
+        return float("inf")
