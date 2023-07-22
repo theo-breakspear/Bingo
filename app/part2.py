@@ -10,9 +10,9 @@ def part2(input: str) -> bool:
     card2 = Card(card2_string)
     card3 = Card(card3_string)
 
-    result1 = card1.playBingo(numbers)
-    result2 = card2.playBingo(numbers)
-    result3 = card3.playBingo(numbers)
+    result1 = card1.play_bingo(numbers)
+    result2 = card2.play_bingo(numbers)
+    result3 = card3.play_bingo(numbers)
 
     smallest_result = min(result1, result2, result3)
 

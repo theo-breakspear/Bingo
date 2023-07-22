@@ -12,7 +12,7 @@ class Card:
             columns.append([row[i] for row in rows])
         return columns
 
-    def playBingo(self, numbers: List[str]) -> int or None:
+    def play_bingo(self, numbers: List[str]) -> int or None:
         rows = self.rows
         columns = self.columns
         call_count = 0

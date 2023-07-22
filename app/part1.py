@@ -8,5 +8,5 @@ def part1(input: str) -> bool:
     numbers = numbers_string.split(",")
     card = Card(card_string)
 
-    result = card.playBingo(numbers)
+    result = card.play_bingo(numbers)
     return type(result) == int
