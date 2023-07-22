@@ -1,5 +1,5 @@
 from Card import Card
-from app.utils import separate_input
+from utils import separate_input
 
 
 def part2(input: str) -> bool:

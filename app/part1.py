@@ -1,5 +1,5 @@
 from Card import Card
-from app.utils import separate_input
+from utils import separate_input
 
 
 def part1(input: str) -> bool:
@@ -9,4 +9,5 @@ def part1(input: str) -> bool:
     card = Card(card_string)
 
     result = card.play_bingo(numbers)
+    print(result)
     return type(result) == int
