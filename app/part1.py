@@ -9,5 +9,4 @@ def part1(input: str) -> bool:
     card = Card(card_string)
 
     result = card.play_bingo(numbers)
-    print(result)
     return type(result) == int
