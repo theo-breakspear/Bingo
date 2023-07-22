@@ -16,11 +16,17 @@ def part2(input: str) -> bool:
 
     smallest_result = min(result1, result2, result3)
 
-    if result1 == result2 == result3:
-        return "Draw"
+    if smallest_result == result1 == result2 == result3:
+        return "All cards draw"
+    if smallest_result == result1 == result2:
+        return "Cards 1 and 2 draw"
+    if smallest_result == result2 == result3:
+        return "Cards 2 and 3 draw"
+    if smallest_result == result1 == result3:
+        return "Cards 1 and 3 draw"
     if smallest_result == result1:
-        return "card1"
-    elif smallest_result == result2:
-        return "card2"
+        return "Card 1 wins"
+    if smallest_result == result2:
+        return "Card 2 wins"
     else:
-        return "card3"
+        return "Card 3 wins"
